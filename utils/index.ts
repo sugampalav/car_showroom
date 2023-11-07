@@ -64,6 +64,7 @@ export async function fetchCars(filters: FilterProps) {
   return result;
 }
 
+//Paid api won't upload the key here, check the API documentation for the images
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
   const url = new URL("https://cdn.imagin.studio/getimage");
   const { make, model, year } = car;
